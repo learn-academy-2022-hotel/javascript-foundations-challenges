@@ -71,15 +71,41 @@ const letterOnly = (array) => {
 console.log(letterOnly(comboArr))
 
 // output: "nicework"
+
+
 // Create a function that takes in an array of numbers and returns the sum.
-// const addThese1 = [1, 2, 3, 4]
+// Pseudocode
+// declare a function called addArray
+// input: array of numbers
+// initialize a sum variable that starts 0
+// iterate through the elements in the array
+// add each element to each other at each iteration
+// push the sum of each iteration to the next array item
+// log the result on the console
+
+const addThese1 = [1, 2, 3, 4]
 // // output: 10
 
-// const addThese2 = []
+const addThese2 = []
 // // output: 0
+
+const addArray = (array) => {
+  let sum = 0
+  for (let i = 0; i < array.length; i++) {
+    sum = sum + array[i]
+  }
+  return sum
+}
+
+console.log(addArray(addThese1));
+console.log(addArray(addThese2));
+
+
 // Create a function that takes in an array of numbers and returns the index of the largest number.
 // const indexHighestNumber = [1, 4, 2, 3]
 // // output: 1
+
+
 // 🏔 Stretch Goals
 // Create a function that takes in two arrays and returns one array with no duplicate values.
 // const arr1 = [3, 7, 10, 5, 4, 3, 3]
