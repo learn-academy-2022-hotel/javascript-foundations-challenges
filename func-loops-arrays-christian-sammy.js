@@ -62,3 +62,37 @@ const arrString = (array) => {
 
 console.log(arrString(comboArr)) // output: "nicework"
 
+// Create a function that takes in an array of numbers and returns the sum.
+const addThese1 = [1, 2, 3, 4]
+
+const addThese2 = []
+
+const addArray = (array) => {
+    let sum = 0
+
+    for (let i = 0; i < array.length; i++){
+        sum += array[i]
+    }
+    return sum
+}
+
+console.log(addArray(addThese1)) // output: 10
+console.log(addArray(addThese2)) // output: 0
+
+
+// Create a function that takes in an array of numbers and returns the index of the largest number.
+const indexHighestNumber = [1, 4, 2, 3]
+const maxNumber = (value) => {
+    let max = 0
+    let arr = []
+    for (let i = 0; i < value.length; i++){
+         let temp = value[i]
+        arr.push(temp)
+        if (max < temp){
+            max = temp
+        }
+    }
+    return (arr.indexOf(max))
+}
+console.log(maxNumber(indexHighestNumber)) // output: 1
+
