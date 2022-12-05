@@ -60,19 +60,40 @@ const comboArr = [
 // input: comboArr
 // output: "nicework"
 
-// function stringFilter(onlyString) {
-//     return onlyString.typeof = "string"
-// }
-// console.log(stringFilter())
 
+function stringFilter(onlyString) {
+    return typeof onlyString === 'string'
+}
+function niceWorkArray () {
+    let filteredStrings = comboArr.filter(stringFilter)
+    return filteredStrings
+}
 
+var niceWork = niceWorkArray()
+niceWork = niceWork.join("")
+console.log(niceWork)
 
 // Create a function that takes in an array of numbers and returns the sum.
 const addThese1 = [1, 2, 3, 4]
 // output: 10
 
+const sum1 = (numArray) => {
+    return numArray.reduce((a, b) => a + b, 0)
+}
+console.log(sum1(addThese1))
+
 const addThese2 = []
 // output: 0
+
+const sum2 = (numArray) => {
+    return numArray.reduce((a, b) => a + b, 0)
+}
+console.log(sum2(addThese2))
+
 // Create a function that takes in an array of numbers and returns the index of the largest number.
-// const indexHighestNumber = [1, 4, 2, 3]
+const indexHighestNumber = [1, 4, 2, 3]
 // output: 1
+
+const highestNum = (highest) => {
+    
+}
