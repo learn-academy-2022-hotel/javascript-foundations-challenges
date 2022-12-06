@@ -41,7 +41,12 @@
 //
 //   })
 // })
-//
+// // GREEN
+// // input/output: string
+// // if yes return relax
+// // if no return keep going
+// // if else return error
+
 // const stress = (string) => {
 //   if(string.toUpperCase() === 'YES') {
 //     return 'relax'
@@ -53,6 +58,14 @@
 // }
 // Write the test for a function that returns "in budget" if a price is lower than $300.
 // Create the function that will make the test pass.
+
+describe ("budget",() => {
+    it("is it in budget?", () => {
+        expect(budget("yes")).toEqual("in budget")
+        expect(budget("no")).toEqual("out of budget")
+    })
+})
+
 // Write the test for a function that takes in two numbers and returns the smaller number.
 // Create the function that will make the test pass.
 // Write the test for a function that takes in one numbers and returns whether the number is odd.
