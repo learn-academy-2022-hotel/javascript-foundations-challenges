@@ -43,14 +43,34 @@ const onlyStrings = (array) => {
 console.log(onlyStrings(comboArr))
 
 // // output: "nicework"
+
 // Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
-// const filterArrayValues = [58, "", "abcd", true, null, false, 0]
+// Psuedocode: 
+// Declare a function called noFalse that takes an array as an arguement
+// Input an array of various datatypes
+// Filter the inputted array to exclude any false, null, 0, or blank values.
+// Console log the reamaining values in a new array
+
+const filterArrayValues = [58, "", "abcd", true, null, false, 0]
+
+const noFalsy = (array) => {
+    return array.filter(Boolean)
+}
+
+console.log(noFalsy(filterArrayValues));
+
+
 // // output: [58, "abcd", true]
+
+
 // 🏔 Stretch Goals
 // Create a function that takes in a string and returns a new string with all the vowels removed.
+
 // const str = "javascript is awesome"
 // // output: "jvscrpt s wsm"
+
 // Create a function that takes in two arrays as arguments returns one array with no duplicate values.
+
 // const arr1 = [3, 7, 10, 5, 4, 3]
 // const arr2 = [7, 8, 2, 1, 5, 4]
 // // output: [3, 7, 10, 5, 4, 8, 2, 1]
