@@ -42,12 +42,11 @@ const onlyLetters = comboArr.filter(value => typeof value === "string")
 const filterArrayValues = [58, "", "abcd", true, null, false, 0]
 
 const withoutNull = filterArrayValues.filter(value => {
-    if (value === true || value === "number" || value === "string")
+    if (typeof value === true || typeof value === "number"  || typeof value === "string")
     return `${value}`
 })
 
+ console.log(withoutNull)
 
-console.log(withoutNull)
 
-
-// output: [58, "abcd", true]
+// output: [58, "abcd", true] 
