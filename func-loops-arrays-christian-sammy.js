@@ -96,3 +96,4 @@ const maxNumber = (value) => {
 }
 console.log(maxNumber(indexHighestNumber)) // output: 1
 
+testing github
