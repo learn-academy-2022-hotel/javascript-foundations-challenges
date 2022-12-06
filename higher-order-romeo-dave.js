@@ -15,22 +15,38 @@ console.log(multiplier)
 //     return array.filter((value) => value % 2 !==0)
 // }
 // console.log(onlyOdd(arr2))
-// // output: [7, 3, 5, 13]
+
+// output: [7, 3, 5, 13]
 
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use the typeof operator.
 
-// declare a function called filteredarray that takes an array of numbers, strings, and boolean, returns only strings. 
+// declare a function called filteredarray that takes an array of numbers, strings, and boolean, returns only strings.
 
-const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
-const filteredArray = (array) => {
-    return array.filter((value) => typeof value === "string")
-}
-console.log(filteredArray(comboArr))
+// const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+//
+// const filteredArray = (array) => {
+//   let stringOnly = array.filter(value => {
+//     return typeof value === "string"
+//   })
+//   return stringOnly.join("")
+// }
+// console.log(filteredArray(comboArr))
 
 // // output: "nicework"
 // Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
-// const filterArrayValues = [58, "", "abcd", true, null, false, 0]
-// // output: [58, "abcd", true]
+
+const filterArrayValues = [58, "", "abcd", true, null, false, 0]
+
+const newArray = (array) => {
+  let typeOne = array.filter(value => {
+    return typeof value === "string" && value.includes("abcd")
+  })
+  return typeOne
+}
+
+console.log(newArray(filterArrayValues))
+
+// output: [58, "abcd", true]
 // 🏔 Stretch Goals
 // Create a function that takes in a string and returns a new string with all the vowels removed.
 // const str = "javascript is awesome"
