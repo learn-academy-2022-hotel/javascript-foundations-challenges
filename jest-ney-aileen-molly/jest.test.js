@@ -40,12 +40,12 @@ const coffee = (string) => {
 // input: strings
 //output:strings
 // create a fucntion that takes in a string and returns a string 
-// describe ("stressTest", () => {
-//     it ("asked if you are stressed", () => {
-//         expect(stressTest("no")).toEqual("keep going")
-//         expect(stressTest("yes")).toEqual("relax")
-//     })
-// })
+describe ("stressTest", () => {
+    it ("asked if you are stressed", () => {
+        expect(stressTest("no")).toEqual("keep going")
+        expect(stressTest("yes")).toEqual("relax")
+    })
+})
 // stressTest
 // ✕ asked if you are stressed
 
@@ -53,14 +53,14 @@ const coffee = (string) => {
 
 //   ReferenceError: stressTest is not defined
 
-// const stressTest = (string) => {
-//     if (string.toUpperCase() === "NO"){
-//         return "keep going"
-//     }
-//     else if (string.toUpperCase() === "YES"){
-//         return "relax"
-// }
-// }
+const stressTest = (string) => {
+    if (string.toUpperCase() === "NO"){
+        return "keep going"
+    }
+    else if (string.toUpperCase() === "YES"){
+        return "relax"
+ }
+}
 // PASS  jest-ney-aileen-molly/jest.test.js
 // coffee
 //   ✓ coffee response (1 ms)
@@ -69,9 +69,9 @@ const coffee = (string) => {
 
 // Write the test for a function that returns "in budget" if a price is lower than $300.
 // Create the function that will make the test pass.
-describe ("inBudget", (value) => {
+describe ("inBudget", () => {
     it ("checks to see if it is in budget", () => {
-        expect(inBudget(value < 300)).toEqual("in budget")
+        expect(inBudget(9)).toEqual("in budget")
     })
 })
 
@@ -96,13 +96,18 @@ const inBudget = (value) => {
 // Write the test for a function that takes in two numbers and returns the smaller number.
 // Create the function that will make the test pass.
 
-describe ("inBudget", (value) => {
-    it ("checks to see if it is in budget", () => {
-        expect(inBudget(value < 300)).toEqual("in budget")
-    })
-})
+
+
+
+
+
+
+
 
 // Write the test for a function that takes in one numbers and returns whether the number is odd.
+
+
+
 // Create the function that will make the test pass.
 // Write the test for a function that takes in a fruit and returns "yellow" if the argument is banana, "red" if apple and "purple" if grape.
 // Create the function that will make the test pass.
