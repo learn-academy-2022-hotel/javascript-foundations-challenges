@@ -47,8 +47,8 @@
 
 //Create a function that takes in an array of numbers and returns the sum.
 const addThese1 = [1, 2, 3, 4];
-let sum = addThese1.reduce(myFunction(a, b){
-    return a + b 
+let sum = (addThese1.reduce(myFunction(a, b)) {
+    return a + b
 } ,0); 
 console.log(sum)
 // // output: 10
@@ -58,3 +58,4 @@ console.log(sum)
 // Create a function that takes in an array of numbers and returns the index of the largest number.
 // const indexHighestNumber = [1, 4, 2, 3]
 // // output: 1
+//test
