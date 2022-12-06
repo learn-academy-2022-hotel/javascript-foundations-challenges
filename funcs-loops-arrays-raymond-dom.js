@@ -46,11 +46,11 @@
 // // output: "nicework"
 
 //Create a function that takes in an array of numbers and returns the sum.
-const addThese1 = [1, 2, 3, 4];
-let sum = (addThese1.reduce(myFunction(a, b)) {
-    return a + b
-} ,0); 
-console.log(sum)
+// const addThese1 = [1, 2, 3, 4];
+// let sum = (addThese1.reduce(myFunction(a, b)) {
+//     return a + b
+// } ,0); 
+// console.log(sum)
 // // output: 10
 
 // const addThese2 = []
@@ -59,3 +59,32 @@ console.log(sum)
 // const indexHighestNumber = [1, 4, 2, 3]
 // // output: 1
 //test
+
+// Write a function that takes in an array of numbers and returns a new array with all numbers multiplied by 10.
+const arr1 = [3, 9, 15, 4, 10]
+const multiplier = arr1.map((value) => value * 10)
+console.log(multiplier)
+// // output: [30, 90, 150, 40, 100]
+
+// Write a function that takes in an array of numbers and returns a new array with only odd numbers.
+const arr2 = [2, 7, 3, 5, 8, 10, 13]
+const onlyOdd = (array) => {
+    return array.filter((value)=> value % 2 !==0)
+}
+console.log(onlyOdd(arr2))
+// output: [7, 3, 5, 13]
+
+// Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use the typeof operator.
+const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+const onlyLetters = (array) =>{
+    let letters = array.filter(value => {
+        return typeof value === "string"
+    })
+}
+console.log(onlyLetters(comboArr))
+
+
+// // output: "nicework"
+// Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
+// const filterArrayValues = [58, "", "abcd", true, null, false, 0]
+// // output: [58, "abcd", true]
