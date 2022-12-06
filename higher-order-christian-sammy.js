@@ -15,9 +15,11 @@ console.log(odd(arr2)) // output: [7, 3, 5, 13]
 //Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use the typeof operator.
 
 const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+
 const onlyString = (array) => {
-   let filterArray = array.filter (value => { return typeof value === "string")
-    return 
+   let filterArray = array.filter(value => {
+    return (typeof value === 'string')
+   })
+   return filterArray.join('')
 }
-console.log()
-// output: "nicework"
+console.log(onlyString(comboArr)) // output: "nicework"
