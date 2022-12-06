@@ -56,15 +56,15 @@ const comboArr = [
 // output: "nicework"
 
 // create function called stringFilter that filters out any data type that is not a string
-// create function called filteredArray1 that uses stringFilter and .join to return a string with only the letters
+// create function called niceWorkArray that uses stringFilter and .join to return a string with only the letters
 // input: comboArr
 // output: "nicework"
 
 
-function stringFilter(onlyString) {
+const stringFilter = (onlyString) => {
     return typeof onlyString === 'string'
 }
-function niceWorkArray () {
+const niceWorkArray = () => {
     let filteredStrings = comboArr.filter(stringFilter)
     return filteredStrings
 }
@@ -94,6 +94,106 @@ console.log(sum2(addThese2))
 const indexHighestNumber = [1, 4, 2, 3]
 // output: 1
 
-const highestNum = (highest) => {
-    
+// create function called largest that retrieves the highest number in given array
+// create variable in function that the highest number will be assigned to
+// use forEach to iterate through each index
+// use conditional to make variable = highest number
+// input: indexHighestNumber
+// output: 1
+
+const largest = (indexHighestNumber) => {
+    var largest = indexHighestNumber[0]
+    indexHighestNumber.forEach((i) => {
+      if (i > largest){
+        largest = i 
+      }
+    })
+    return indexHighestNumber.indexOf(largest)
 }
+console.log(largest(indexHighestNumber))
+
+
+// Create a function that takes in two arrays and returns one array with no duplicate values.
+const arr1 = [3, 7, 10, 5, 4, 3, 3]
+const arr2 = [7, 8, 2, 3, 1, 5, 4]
+// output: [3, 7, 10, 5, 4, 8, 2, 1]
+
+// assign empty array to variable noDupe
+// assign combined arrays to variable arr3
+// create function to push unique characters into noDupe
+
+let noDupe = []
+let arr3 = arr1.concat(arr2)
+arr3.forEach((unique) => {
+    if (!noDupe.includes(unique)){
+        noDupe.push(unique)
+    }
+})
+console.log(noDupe);
+
+// Create a function that takes in two numbers as arguments and returns an array the length of the first number filled with the second number.
+// const arrayLength = 6
+// const arrayValue = 0
+// output: [0, 0, 0, 0, 0, 0]
+
+// assign empty array to variable emptyArray
+// create function specArray1
+// for loop within function to iterate through arrayLength and push arrayValue into each index
+
+
+// let emptyArray = []
+// const specArray1 = (emptyArray) => {
+//     let length = arrayLength
+//     for (let i=0; i < length; i++){
+//         emptyArray.push(arrayValue)
+//     } return emptyArray
+// }
+// console.log(specArray1(emptyArray))
+
+const arrayLength = 4
+const arrayValue = 11
+// output: [11, 11, 11, 11]
+
+// assign empty array to variable emptyArray2
+// create function specArray2
+// for loop within function to iterate through arrayLength and push arrayValue into each index
+
+let emptyArray2 = []
+const specArray2 = (emptyArray) => {
+    let length = arrayLength
+    for (let i=0; i < length; i++){
+        emptyArray2.push(arrayValue)
+    } return emptyArray2
+}
+console.log(specArray2(emptyArray2))
+
+// Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function.
+const addUp1 = 4
+// 1 + 2 + 3 + 4 = 10
+// output: 10
+
+// create function that takes addUp1/2/3 and returns sum of it and all whole && positive numbers below it
+// input: addUp1/addUp2/addUp3
+// output: 10/55/180300
+
+const sumAddUp1 = (value) => {
+    return value * (value + 1) / 2
+}
+console.log(sumAddUp1(addUp1))
+
+const addUp2 = 10
+// 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
+// output: 55
+
+const sumAddUp2 = (value) => {
+    return value * (value + 1) / 2
+}
+console.log(sumAddUp2(addUp2))
+
+const addUp3 = 600
+// output: 180300
+
+const sumAddUp3 = (value) => {
+    return value * (value + 1) / 2
+}
+console.log(sumAddUp3(addUp3))
