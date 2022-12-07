@@ -36,7 +36,19 @@ const oddNumbers = (array) => {
 const comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
 // output: "nicework"
 
+//create a function named onlyLetters
+//input:array of different date types
+//output: string with only letters
+//parameter: array of different date types
+// use filter to iterate
 
+const onlyLetters = (array) => {
+    let oneType= array.filter(value => {
+         return typeof value === `string`     
+      
+    })
+ }
+     console.log(onlyLetters(comboArr))
 
 //Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
 const filterArrayValues = [58, "", "abcd", true, null, false, 0]
