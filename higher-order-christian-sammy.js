@@ -23,3 +23,13 @@ const onlyString = (array) => {
    return filterArray.join('')
 }
 console.log(onlyString(comboArr)) // output: "nicework"
+
+// Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
+
+const filterArrayValues = [58, "", "abcd", true, null, false, 0]
+
+const arrayFilter = (array) => {
+       return array.filter(value => !!value)
+}
+
+console.log(arrayFilter(filterArrayValues)) // output: [58, "abcd", true]
