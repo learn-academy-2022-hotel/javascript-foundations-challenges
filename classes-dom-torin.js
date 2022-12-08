@@ -4,17 +4,25 @@
 
 // let coffeeOne = new Coffee("black", "no", "no")
 // console.log(coffeeOne)
+// -->Coffee { type: 'black', cream: 'no', sugar: 'no' }
 
 // Write the code that outputs the black coffee's profile
 
-
+// let coffeeTwo = new Coffee("black", "no", "no")
+// console.log(coffeeTwo.coffeeProfile())
+//-->A black coffee with no cream, no sugar
 
 // Write the code that makes a coffee object with 1 cream and 2 sugars
 
-
+// let coffeeThree = new Coffee("", 1, 2)
+// console.log(coffeeThree)
+//-->Coffee { type: ' ', cream: 1, sugar: 2 }
 
 // Write the code that outputs the 1 cream and 2 sugars coffee profile
 
+// let coffeeOne = new Coffee( "", 1, 2)
+// console.log(coffeeOne.coffeeProfile())
+//-->A coffee with 1 cream, 2 sugars
 
 class Coffee {
   constructor(type, cream, sugar) {
@@ -22,11 +30,11 @@ class Coffee {
     this.cream = cream,
     this.sugar = sugar
   }
-
+  
   coffeeProfile() {
     return `A ${this.type} coffee with ${this.creams()}, ${this.sugars()}`
   }
-
+  
   creams() {
     if (this.cream > 1) {
       return `${this.cream} creams`
@@ -34,7 +42,7 @@ class Coffee {
       return `${this.cream} cream`
     }
   }
-
+  
   sugars() {
     if (this.sugar > 1) {
       return `${this.sugar} sugars`
@@ -43,10 +51,15 @@ class Coffee {
     }
   }
 }
-let coffeeOne = new Coffee("black", "no", "no")
-console.log(coffeeOne)
 
 // Latte Maker: create a class for Latte
+class Latte {
+  constructor(flavor, milk, shots) {
+    this.flavor = flavor,
+    this.milk = milk,
+    this.shots = shots
+  }
+
 // Write a Latte class that takes a flavor, a milk type, and a number of shots
 // Write a method for your Latte class that outputs the latte's profile
 // Write the code that makes a regular, single shot latte
