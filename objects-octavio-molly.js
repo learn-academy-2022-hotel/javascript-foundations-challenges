@@ -59,18 +59,58 @@ function lunchSandwich(object) {
 }
 console.log(lunchSandwich(lunch))
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
-// Consider this variable:
+lunch.lunchSandwich = lunchSandwich 
 
-// const animals = [
-//   { name: "Waffles", type: "dog", age: 7 },
-//   { name: "Fluffy", type: "cat", age: 14 },
-//   { name: "Spelunky", type: "dog", age: 4 },
-//   { name: "Hank", type: "cat", age: 11 }
-// ]
+console.log(lunch.lunchSandwich(lunch))
+//The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana.
+// Consider this variable:
+const animals = [
+  { name: "Waffles", type: "dog", age: 7 },
+  { name: "Fluffy", type: "cat", age: 14 },
+  { name: "Spelunky", type: "dog", age: 4 },
+  { name: "Hank", type: "cat", age: 11 }
+]
+
 // Create a function that takes in an array of animal objects and returns a new array with only the objects that are cats.
+let onlyCats = []
+for (i=0; i<animals.length; i++){
+  if (animals [i].type === "cat"){
+    onlyCats.push (animals[i])
+  }
+} 
+console.log(onlyCats)
+// { name: 'Fluffy', type: 'cat', age: 14 },
+// { name: 'Hank', type: 'cat', age: 11 }
 // Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
+let onlyNames =[]
+  for (i=0; i<animals.length; i++){
+  onlyNames.push (animals[i].name)
+  }
+console.log(onlyNames)
+//[ 'Waffles', 'Fluffy', 'Spelunky', 'Hank' ]
 // Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
+let oldCats =[]
+for (i=0; i<animals.length; i++){
+  if (animals [i].age > 10){
+    oldCats.push (animals[i].name)
+  }
+}
+console.log(oldCats)
+//[ 'Fluffy', 'Hank' ]
+
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
+let animalInfo = []
+for(i=0; i<animals.length; i++){
+  animalInfo.push (`${animals[i].name} is ${animals[i].age} years old and is ${animals[i].type}`)
+}
+console.log(animalInfo)
+// //  'Waffles is 7 years old and is dog',
+// 'Fluffy is 14 years old and is cat',
+// 'Spelunky is 4 years old and is dog',
+// 'Hank is 11 years old and is cat'
+// ]
+
+
 // Consider this variable:
 
 // const author = {
