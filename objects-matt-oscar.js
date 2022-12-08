@@ -91,19 +91,19 @@
 
 // Consider this variable:
 
-// const animals = [
-//   { name: "Waffles", type: "dog", age: 7 },
-//   { name: "Fluffy", type: "cat", age: 14 },
-//   { name: "Spelunky", type: "dog", age: 4 },
-//   { name: "Hank", type: "cat", age: 11 }
-// ]
-// Create a function that takes in an array of animal objects and returns a new array with only the objects that are cats.
 const animals = [
-    { name: "Waffles", type: "dog", age: 7 },
-    { name: "Fluffy", type: "cat", age: 14 },
-    { name: "Spelunky", type: "dog", age: 4 },
-    { name: "Hank", type: "cat", age: 11 },
-  ]
+  { name: "Waffles", type: "dog", age: 7 },
+  { name: "Fluffy", type: "cat", age: 14 },
+  { name: "Spelunky", type: "dog", age: 4 },
+  { name: "Hank", type: "cat", age: 11 }
+]
+// Create a function that takes in an array of animal objects and returns a new array with only the objects that are cats.
+// const animals = [
+//     { name: "Waffles", type: "dog", age: 7 },
+//     { name: "Fluffy", type: "cat", age: 14 },
+//     { name: "Spelunky", type: "dog", age: 4 },
+//     { name: "Hank", type: "cat", age: 11 },
+//   ]
 
   //Pseudocode
   // input: array
@@ -111,19 +111,37 @@ const animals = [
 
   // Procees: We're going to create a function that takes in the array and uses the filter method to filter the objects with only cats and puts it into it's own new array.
 
-//   let catsArray = animals.filter(type => animals.type === "cat")
-const catsArray = (array) => {
-    let onlyCats = array.filter(object =>  {
-        return object.type === "cat"
-})     
-    return onlyCats
-}
 
-  console.log(catsArray(animals));
+// const catsArray = (array) => {
+//     let onlyCats = array.filter(object =>  {
+//         return object.type === "cat"
+// })     
+//     return onlyCats
+// }
+
+//   console.log(catsArray(animals));
     
   
 // Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
+// const names = (item, index, array) => {
+//   return array.map((object) =>)
+// }
+
+// let names = (array) => {
+//   return array.map((object) => object.name)
+// }
+// console.log(names(animals))?
+// console.log(names)
+// console.log(animalNames(animals))
 // Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
+
+let names = (array) => {
+  if(animals.age > 10){
+  return array.map((object) => object.name)
+  }
+}
+console.log(names(animals))
+
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
 // Consider this variable:
 
