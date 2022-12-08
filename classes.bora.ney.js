@@ -1,6 +1,5 @@
 // Coffee marker: copy the given Coffee class into a text editor
 
-
 // Write the code that makes a black coffee object
 // let blackCoffee = new Coffee
 
@@ -45,10 +44,42 @@ class Coffee {
   let blackCoffee = new Coffee("", 1, 2)
   console.log(blackCoffee)
 
-Latte Maker: create a class for Latte
-Write a Latte class that takes a flavor, a milk type, and a number of shots
-Write a method for your Latte class that outputs the latte's profile
-Write the code that makes a regular, single shot latte
-Log the regular, single shot latte's profile
-Write the code that makes a double shot, hazelnut latte with almond milk.
-Log the double shot, hazelnut latte with almond milk's profile.
+// Latte Maker: create a class for Latte
+// Write a Latte class that takes a flavor, a milk type, and a number of shots
+// Write a method for your Latte class that outputs the latte's profile
+// Write the code that makes a regular, single shot latte
+// Log the regular, single shot latte's profile
+// Write the code that makes a double shot, hazelnut latte with almond milk.
+// Log the double shot, hazelnut latte with almond milk's profile.
+
+class Latte {
+    constructor(flavor, milkType, numberOfShots) {
+      this.flavor = flavor.toLowerCase()
+      this.milkType = milkType.toLowerCase()
+      this.numberOfShots = numberOfShots 
+    }
+}
+
+console.log(Latte)
+
+// let regLatte = new Latte("none", "regular", 1)
+// console.log(regLatte)
+
+let hazelNutLatte = new Latte("hazelnut", "almond milk", 2)
+console.log(hazelNutLatte)
+
+// Volume of a Cylinder: create a class for Cylinder
+// Write a class that calculates the volume of a Cylinder: v = πr2h (r is the radius and h is the height of the cylinder)
+// Write the code that rounds the volume of the cylinder to four decimal places
+// Write the code that creates three unique cylinder objects
+
+class Cylinder {
+    constructor(radius, height) {
+        this.radius = radius
+        this.height = height
+        return `${this.radius} * ${this.height} * 2 * Math.PI`
+    }
+}
+
+let demoType = new Cylinder(5, 2)
+console.log(demoType)
