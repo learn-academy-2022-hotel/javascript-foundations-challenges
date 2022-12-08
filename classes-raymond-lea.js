@@ -51,6 +51,7 @@
 // let leasLatte = new Latte("Vanilla", "Regular", 1)
 // console.log(leasLatte.latteProfile())
 // Log the regular, single shot latte's profile
+// let singleLatte = 
 // Write the code that makes a double shot, hazelnut latte with almond milk.
 // Log the double shot, hazelnut latte with almond milk's profile.
 // Volume of a Cylinder: create a class for Cylinder
