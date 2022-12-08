@@ -23,33 +23,54 @@
 
 // Consider this variable:
 //
-const product = {
-  name: "chair",
-  price: 24.99,
-  describeProduct: function() {
-    return `The product is a ${this.name}. It costs $${this.price}.`
+// const product = {
+//   name: "chair",
+//   price: 24.99,
+//   describeProduct: function() {
+//     return `The product is a ${this.name}. It costs $${this.price}.`
 
-  }
+//   }
 
- }
-console.log(product.describeProduct())
+//  }
+//console.log(product.describeProduct())
+
+// const totalWithTax = (object) => {
+//   let roundedNumber = object.price * .07 + object.price
+//     return roundedNumber.toFixed(2)
+//Use the toFixed() method to round a number to 2 decimal places, e.g. const result = num. toFixed(2) 
+// }
+// console.log(totalWithTax(product))
 
 // Write a function called describeProduct that takes the product object as an argument and logs "The product is a chair. It costs $24.99".
 
 
 // Write a function called totalWithTax that takes the product object as an argument and returns the total price of the chair that includes a 7% sales tax rounded to two decimals.
 
+
 // Consider this variable:
-//
-// const lunch = {
-//   name: "PB and Banana",
-//   type: "sandwich",
-//   ingredients: ["bread", "peanut butter", "banana"]
-//   totalWithTax: function()
-// }
+
+const lunch = {
+  name: "PB and Banana",
+  type: "sandwich",
+  ingredients: ["bread", "peanut butter", "banana"]
+  
+  
+}
+  const readLunch = () => {
+    return `the ingredients for a ${this.name} are ${this.ingredients}`
+  }
+  
+  // sandwich: function (object) {
+  //   return `the ingredients for a ${this.name} are ${this.ingredients}`
+  // }
+
+// console.log(lunch.ingredients)
+// console.log(lunch.ingredients[2])
+// console.log(lunch.sandwich(""))
+console.log(readLunch(""))
 
 
-// Write the code that accesses the ingredients property.
+// Write the code that accesses the ingredients property. 
 // Write the code that access the third ingredient of the lunch object.
 // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
