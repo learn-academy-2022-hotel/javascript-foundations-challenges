@@ -5,11 +5,11 @@ class Coffee {
         this.cream = cream
         this.sugar = sugar
     }
-    
+
     coffeeProfile() {
         return `A ${this.type} coffee with ${this.creams()}, ${this.sugars()}`
     }
-    
+
     creams() {
         if (this.cream > 1) {
             return `${this.cream} creams`
@@ -17,7 +17,7 @@ class Coffee {
             return `${this.cream} cream`
         }
     }
-    
+
     sugars() {
         if (this.sugar > 1) {
             return `${this.sugar} sugars`
@@ -52,7 +52,7 @@ class Latte {
     latteProfile() {
         return `A ${this.flavor} latte with ${this.milkType} milk and ${this.shots} shots`
     }
-    
+
 }
 let ourLatte = new Latte("honey lavender", "whole", 2)
 console.log(ourLatte)
@@ -69,6 +69,37 @@ console.log(hazelnutLatte)
 console.log(hazelnutLatte.latteProfile())
 
 // Volume of a Cylinder: create a class for Cylinder
+
+class Cylinder {
+  constructor (radius, height) {
+    this.radius = radius
+    this.height = height
+  }
+  volume () {
+    let cylVol = this.radius*2*this.height*Math.PI
+    // return `Volume of the cylinder is ${cylVol}`
+    return cylVol
+  }
+}
+
+// console.log (new Cylinder(2,3))
+// console.log (new Cylinder(2,3).volume())
+// console.log(Math.PI)
+let myCylinder = new Cylinder(4,2)
+// console.log(myCylinder.volume())
+let volume = myCylinder.volume()
+console.log(volume.toFixed(4))
+
 // Write a class that calculates the volume of a Cylinder: v = πr2h (r is the radius and h is the height of the cylinder)
+
 // Write the code that rounds the volume of the cylinder to four decimal places
+
+
 // Write the code that creates three unique cylinder objects
+
+let cylOne = new Cylinder (5, 6)
+let cylTwo = new Cylinder (2, 7)
+let cylThree = new Cylinder (9,3)
+
+// console.log (cylOne)
+console.log(cylOne.volume().toFixed(4))
