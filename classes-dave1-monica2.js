@@ -4,11 +4,11 @@ class Coffee {
         this.cream = cream
         this.sugar = sugar
     }
-    
+
     coffeeProfile() {
         return `A ${this.type} coffee with ${this.creams()}, ${this.sugars()}`
     }
-    
+
     creams() {
         if (this.cream > 1) {
             return `${this.cream} creams`
@@ -16,7 +16,7 @@ class Coffee {
             return `${this.cream} cream`
         }
     }
-    
+
     sugars() {
         if (this.sugar > 1) {
             return `${this.sugar} sugars`
@@ -94,14 +94,14 @@ console.log(newCylinder.cylinderMath())
 // Write the code that rounds the volume of the cylinder to four decimal places
 console.log(newCylinder.cylinderMath().toFixed(4))
 //output: 25.1327
-
-// Write the code that creates three unique cylinder objects
-const cylinder1 = new Cylinder(6, 2)
-console.log(cylinder1.cylinderMath().toFixed(4))
-//output: 226.1947
-const cylinder2 = new Cylinder(4, 8)
-console.log(cylinder2.cylinderMath().toFixed(4))
-//output: 402.1239
-const cylinder3 = new Cylinder(43, 21)
-console.log(cylinder3.cylinderMath().toFixed(4))
-//output: 121984.9011
+//
+// // Write the code that creates three unique cylinder objects
+// const cylinder1 = new Cylinder(6, 2)
+// console.log(cylinder1.cylinderMath().toFixed(4))
+// //output: 226.1947
+// const cylinder2 = new Cylinder(4, 8)
+// console.log(cylinder2.cylinderMath().toFixed(4))
+// //output: 402.1239
+// const cylinder3 = new Cylinder(43, 21)
+// console.log(cylinder3.cylinderMath().toFixed(4))
+// //output: 121984.9011
