@@ -51,22 +51,30 @@
 // let leasLatte = new Latte("Vanilla", "Regular", 1)
 // console.log(leasLatte.latteProfile())
 // Log the regular, single shot latte's profile
-// let singleLatte = 
 // Write the code that makes a double shot, hazelnut latte with almond milk.
+// let hazelnutLatte = new Latte("Hazelnut", "Almond", 2)
+// console.log(hazelnutLatte.latteProfile()) 
 // Log the double shot, hazelnut latte with almond milk's profile.
 // Volume of a Cylinder: create a class for Cylinder
 class Cylinder {
-    constructor(radiusNumber, heightNumber, piNumber) {
+    constructor(radiusNumber, heightNumber) {
         this.radius = radiusNumber,
-        this.height = heightNumber,
-        this.pi = piNumber
+        this.height = heightNumber
+    
     }
     volumeCylinder() {
-        return this.pi * this.radius**2 * this.height
+        return (Math.PI * this.radius**2 * this.height).toFixed(4)
     }
 }
-let problemOne = new Cylinder(3, 6, 3.14)
-console.log(problemOne.volumeCylinder())
+let varOne = new Cylinder(3, 6)
+let varTwo = new Cylinder(52, 31)
+let varThree = new Cylinder(38, 24)
+// console.log(roundedAnswer1())
+// console.log(roundedAnswer2())
+// console.log(roundedAnswer3())
+console.log(varOne.volumeCylinder())
+console.log(varTwo.volumeCylinder())
+console.log(varThree.volumeCylinder())
 // Write a class that calculates the volume of a Cylinder: v = πr2h (r is the radius and h is the height of the cylinder)
 // Write the code that rounds the volume of the cylinder to four decimal places
 // Write the code that creates three unique cylinder objects
