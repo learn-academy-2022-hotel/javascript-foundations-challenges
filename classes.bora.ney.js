@@ -13,36 +13,36 @@
 // let blackCoffee = new Coffee("", 1, 2)
 // console.log(blackCoffee)
 
-class Coffee {
-    constructor(type, cream, sugar) {
-      this.type = type.toLowerCase()
-      this.cream = cream
-      this.sugar = sugar
-    }
+// class Coffee {
+//     constructor(type, cream, sugar) {
+//       this.type = type.toLowerCase()
+//       this.cream = cream
+//       this.sugar = sugar
+//     }
   
-    coffeeProfile() {
-      return `A ${this.type} coffee with ${this.creams()}, ${this.sugars()}`
-    }
+//     coffeeProfile() {
+//       return `A ${this.type} coffee with ${this.creams()}, ${this.sugars()}`
+//     }
   
-    creams() {
-      if (this.cream > 1) {
-        return `${this.cream} creams`
-      } else {
-        return `${this.cream} cream`
-      }
-    }
+//     creams() {
+//       if (this.cream > 1) {
+//         return `${this.cream} creams`
+//       } else {
+//         return `${this.cream} cream`
+//       }
+//     }
   
-    sugars() {
-      if (this.sugar > 1) {
-        return `${this.sugar} sugars`
-      } else {
-        return `${this.sugar} sugar`
-      }
-    }
+//     sugars() {
+//       if (this.sugar > 1) {
+//         return `${this.sugar} sugars`
+//       } else {
+//         return `${this.sugar} sugar`
+//       }
+//     }
 
-  }
-  let blackCoffee = new Coffee("", 1, 2)
-  console.log(blackCoffee)
+//   }
+//   let blackCoffee = new Coffee("", 1, 2)
+//   console.log(blackCoffee)
 
 // Latte Maker: create a class for Latte
 // Write a Latte class that takes a flavor, a milk type, and a number of shots
@@ -52,34 +52,57 @@ class Coffee {
 // Write the code that makes a double shot, hazelnut latte with almond milk.
 // Log the double shot, hazelnut latte with almond milk's profile.
 
-class Latte {
-    constructor(flavor, milkType, numberOfShots) {
-      this.flavor = flavor.toLowerCase()
-      this.milkType = milkType.toLowerCase()
-      this.numberOfShots = numberOfShots 
-    }
-}
+// class Latte {
+//     constructor(flavor, milkType, numberOfShots) {
+//       this.flavor = flavor.toLowerCase()
+//       this.milkType = milkType.toLowerCase()
+//       this.numberOfShots = numberOfShots 
+//     }
+// }
 
-console.log(Latte)
+// console.log(Latte)
 
 // let regLatte = new Latte("none", "regular", 1)
 // console.log(regLatte)
 
-let hazelNutLatte = new Latte("hazelnut", "almond milk", 2)
-console.log(hazelNutLatte)
+// let hazelNutLatte = new Latte("hazelnut", "almond milk", 2)
+// console.log(hazelNutLatte)
 
 // Volume of a Cylinder: create a class for Cylinder
 // Write a class that calculates the volume of a Cylinder: v = πr2h (r is the radius and h is the height of the cylinder)
 // Write the code that rounds the volume of the cylinder to four decimal places
 // Write the code that creates three unique cylinder objects
 
+// class Cylinder {
+//     constructor(radius, height) {
+//         this.radius = radius
+//         this.height = height
+//     }
+        
+//         method () {
+//         return (this.radius * this.height * 2 * Math.PI).toFixed(5)
+//         }
+// }
+
+// let demoType = new Cylinder(5, 2)
+// console.log(demoType.method())
+
 class Cylinder {
-    constructor(radius, height) {
-        this.radius = radius
-        this.height = height
-        return `${this.radius} * ${this.height} * 2 * Math.PI`
-    }
+ constructor (radius, height) {
+this.radius = radius,
+this.height = height
+
+  }
+calculation() {
+  return (this.radius * this.height * 2 * Math.PI).toFixed(4)
 }
 
-let demoType = new Cylinder(5, 2)
-console.log(demoType)
+
+}
+
+let newCylinder = new Cylinder(5,2)
+let newCylinder2 = new Cylinder(6,10)
+let newCylinder3 = new Cylinder(9,7)
+console.log(newCylinder.calculation())
+console.log(newCylinder2.calculation())
+console.log(newCylinder3.calculation())
